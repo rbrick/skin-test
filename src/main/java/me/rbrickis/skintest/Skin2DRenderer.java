@@ -8,7 +8,7 @@ import java.awt.image.BufferedImage;
 public class Skin2DRenderer extends SkinRenderer<Graphics2D> {
     @Override
     public void renderTo(Graphics2D graphics) {
-        for (RendererSkinPart part : getParts()) {
+        for (RenderedSkinPart part : getParts()) {
             BufferedImage image = part.part.getRenderedPart();
 
             if (part.flip) {
